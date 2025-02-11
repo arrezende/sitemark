@@ -9,13 +9,14 @@
 
 ## 🔗 Table of Contents
 
--   [📍 Overview](#-overview)
--   [👾 Features](#-features)
--   [📁 Project Structure](#-project-structure)
--   [🚀 Getting Started](#-getting-started)
-    -   [☑️ Prerequisites](#-prerequisites)
-    -   [⚙️ Installation](#-installation)
-    -   [🤖 Usage](#🤖-usage)
+- [📍 Overview](#-overview)
+- [👾 Features](#-features)
+- [📁 Project Structure](#-project-structure)
+  
+- [🚀 Getting Started](#-getting-started)
+  - [☑️ Prerequisites](#-prerequisites)
+  - [⚙️ Installation](#-installation)
+
 
 ---
 
@@ -33,8 +34,8 @@ This platform serves as a centralized hub for users to organize their watchlists
 
 ## 👾 Features
 
-User Registration & Authentication – Users can create an account and log in securely
-
+ User Registration & Authentication – Users can create an account and log in securely
+ 
 ✅ Content Submission – Users can add series/movies with details like title, platform, image, and link
 
 ---
@@ -102,16 +103,17 @@ User Registration & Authentication – Users can create an account and log in se
     └── vite.config.js
 ```
 
----
 
+---
 ## 🚀 Getting Started
 
 ### ☑️ Prerequisites
 
 Before getting started with sitemark, ensure your runtime environment meets the following requirements:
 
--   **Programming Language:** PHP
--   **Package Manager:** Npm, Composer
+- **Programming Language:** PHP
+- **Package Manager:** Npm, Composer
+
 
 ### ⚙️ Installation
 
@@ -120,27 +122,48 @@ Install sitemark using one of the following methods:
 **Build from source:**
 
 1. Clone the sitemark repository:
-
 ```sh
 ❯ git clone https://github.com/arrezende/sitemark
 ```
 
 2. Navigate to the project directory:
-
 ```sh
 ❯ cd sitemark
 ```
 
 3. Install the project dependencies:
 
-**Using `npm`** &nbsp; [<img align="center" src="" />]()
+
+**Using `npm`** &nbsp; [<img align="center" src="https://img.shields.io/npm/v/npm.svg?style={badge_style}&logo=NPM&logoColor=white" />]()
 
 ```sh
 ❯ npm run build
 ```
+
 
 **Using `composer`** &nbsp; [<img align="center" src="https://img.shields.io/badge/PHP-777BB4.svg?style={badge_style}&logo=php&logoColor=white" />](https://www.php.net/)
 
 ```sh
 ❯ composer install
 ```
+4. Create the database:
+```sh
+❯ touch database/database.sqlite | php artisan migrate
+```
+
+5. Create the .env file
+```sh
+❯ cp .env.example .env
+```
+
+6. Create the token key
+```sh
+❯ php artisan key:generate
+``` 
+
+7. Create the storage link
+```sh
+❯ php artisan storage:link
+``` 
+
+
