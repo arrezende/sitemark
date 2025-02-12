@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
             'name' => 'Alex',
             'last_name' => 'Rezende',
             'email' => 'arrezende@gmail.com',
-            'password' => bcrypt('4l3x1989'),
+            'password' => bcrypt('admin1234'),
         ]);
     }
 }
